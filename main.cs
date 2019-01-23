@@ -15,7 +15,7 @@ class MainClass
         Player player = new Player(map.ID.ToString(), 0, 9);
 
         // Game Loop
-        while (player.Lives > 0)
+        while (player.Lives > 0 && map.TreasuresLeft() > 0)
         { ListOptions(ref player, ref map); }
 
         if (player.Lives == 0)
