@@ -1,0 +1,369 @@
+{
+  "castles":
+  {
+    "CASTLE 1": {
+      "MSTR. BEDROOM": {
+        "treasure": {
+          "name": "CHEST",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "LOUNGE": {
+        "treasure": {
+          "name": "ANCIENT SWORD",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "DUNGEON": {
+        "treasure": {
+          "name": "JEWELLERY BOX",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "KITCHEN": {
+        "treasure": {
+          "name": "SILVERWARE",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "DINING ROOM": {
+        "treasure": {
+          "name": "GOLDEN CANDLESTICK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "ENTRANCE HALL": {
+        "treasure": {
+          "name": "PRICELESS ARTWORK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "STUDY": {
+        "treasure": {
+          "name": "SIGNET RING",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      }
+    },
+
+    "CASTLE 2": {
+      "LOUNGE": {
+        "treasure": {
+          "name": "ANCIENT SWORD",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "SERVANT'S QUARTERS": {
+        "treasure": {
+          "name": "BAG OF MONEY",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "DUNGEON": {
+        "treasure": {
+          "name": "GOLDEN CANDLESTICK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "BALCONY": {
+        "treasure": {
+          "name": "BOX",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "DINING ROOM": {
+        "treasure": {
+          "name": "GOLDEN CANDLESTICK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "ENTRANCE HALL": {
+        "treasure": {
+          "name": "PRICELESS ARTWORK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "STUDY": {
+        "treasure": {
+          "name": "SIGNET RING",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      }
+    },
+
+    "CASTLE 3": {
+      "MSTR. BEDROOM": {
+        "treasure": {
+          "name": "CHEST",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "DUNGEON": {
+        "treasure": {
+          "name": "JEWELLERY BOX",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "LOUNGE": {
+        "treasure": {
+          "name": "ANCIENT SWORD",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "KITCHEN": {
+        "treasure": {
+          "name": "SILVERWARE",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "BALCONY": {
+        "treasure": {
+          "name": "RUBY NECKLACE",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "SERVANT'S QUARTERS": {
+        "treasure": {
+          "name": "GOLDEN CANDLESTICK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "STUDY": {
+        "treasure": {
+          "name": "SIGNET RING",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      }
+    },
+
+    "CASTLE 4": {
+      "MSTR. BEDROOM": {
+        "treasure": {
+          "name": "CHEST",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "DUNGEON": {
+        "treasure": {
+          "name": "JEWELLERY BOX",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "DINING ROOM": {
+        "treasure": {
+          "name": "GOLDEN CANDLESTICK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "LOUNGE": {
+        "treasure": {
+          "name": "ANCIENT SWORD",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "ENTRANCE HALL": {
+        "treasure": {
+          "name": "PRICELESS ARTWORK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "SERVANT'S QUARTERS": {
+        "treasure": {
+          "name": "GOLDEN CANDLESTICK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "STUDY": {
+        "treasure": {
+          "name": "SIGNET RING",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      }
+    },
+
+    "CASTLE 5": {
+      "BALCONY": {
+        "treasure": {
+          "name": "RUBY NECKLACE",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "SERVANT'S QUARTERS": {
+        "treasure": {
+          "name": "GOLDEN CANDLESTICK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "MSTR. BEDROOM": {
+        "treasure": {
+          "name": "CHEST",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "ENTRANCE HALL": {
+        "treasure": {
+          "name": "PRICELESS ARTWORK",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "DUNGEON": {
+        "treasure": {
+          "name": "JEWELLERY BOX",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "STUDY": {
+        "treasure": {
+          "name": "SIGNET RING",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      },
+      "LOUNGE": {
+        "treasure": {
+          "name": "ANCIENT SWORD",
+          "points": "{GENPOINTS}"
+        },
+        "monster": {
+          "name": "{GENNAME}",
+          "present": "{BOOL}"
+        }
+      }
+    }
+  }
+}
