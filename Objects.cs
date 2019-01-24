@@ -97,6 +97,7 @@ class Monster : Obj
 {
     public string Name { get; set; }
     public bool Present { get; set; }
+    public bool HasBluffed { get; set; }
 
     // List of potential monster names.
     public static string[] MonsterNames = new string[]

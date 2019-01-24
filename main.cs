@@ -62,7 +62,7 @@ class MainClass
                 if (room.Monster.Present)
                 {
                     Console.WriteLine("2) Fight " + room.Monster.Name);
-                    Console.WriteLine("3) Bluff " + room.Monster.Name);
+                    if (!room.Monster.HasBluffed) Console.WriteLine("3) Bluff " + room.Monster.Name);
                     choice = Console.ReadLine();
                     // Choose Fight or Bluff
                     switch (choice)
@@ -83,11 +83,15 @@ class MainClass
                             }
                             break;
                         case "3":
-                            if (room.Monster.Bluff()) Console.WriteLine("Success!");
-                            else
+                            if (!room.Monster.HasBluffed)
                             {
-                                // Failed Bluff
-                                Console.WriteLine("Failed!");
+                                if (room.Monster.Bluff()) Console.WriteLine("Success!");
+                                else
+                                {
+                                    // Failed Bluff
+                                    Console.WriteLine("Failed!");
+                                }
+                                room.Monster.HasBluffed = true;
                             }
                             break;
                     }
