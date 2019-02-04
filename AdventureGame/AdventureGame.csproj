@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsciiMapGenerator.cs" />
-    <Compile Include="main.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="MapParser.cs" />
     <Compile Include="Objects.cs" />
   </ItemGroup>

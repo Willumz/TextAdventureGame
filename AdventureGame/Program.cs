@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Data.Common;
 using System.Linq;
 
 class MainClass
@@ -63,6 +62,7 @@ class MainClass
                 {
                     Console.WriteLine("2) Fight " + room.Monster.Name);
                     if (!room.Monster.HasBluffed) Console.WriteLine("3) Bluff " + room.Monster.Name);
+                    Console.WriteLine("4) Catch " + room.Monster.Name);
                     choice = Console.ReadLine();
                     // Choose Fight or Bluff
                     switch (choice)
@@ -92,6 +92,19 @@ class MainClass
                                     Console.WriteLine("Failed!");
                                 }
                                 room.Monster.HasBluffed = true;
+                            }
+                            break;
+                        case "4":
+                            if (player.Monsters.CatchMonster(room.Monster))
+                            {
+                                room.Monster.Present = false;
+                                Console.WriteLine(room.Monster.Name + " gives you another life!");
+                                player.Lives++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("You failed to catch it!\nIt attacks and you lose a life!");
+                                player.Lives--;
                             }
                             break;
                     }
@@ -158,6 +171,7 @@ class MainClass
         Console.WriteLine("2) Number of Treasures Remaining");
         Console.WriteLine("3) Number of Lives Remaining");
         Console.WriteLine("4) Show Map");
+        Console.WriteLine("5) List Monsters Caught");
         string choice = Console.ReadLine();
         switch (choice)
         {
@@ -172,6 +186,12 @@ class MainClass
                 break;
             case "4":
                 Console.WriteLine(AsciiMapGenerator.GenMap(map, player));
+                break;
+            case "5":
+                foreach (Monster i in player.Monsters.List)
+                {
+                    Console.WriteLine(i.Name);
+                }
                 break;
         }
     }

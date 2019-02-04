@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 // Basic object, which others can inherit from.
 class Obj
@@ -35,7 +36,7 @@ public interface IPlace
 }
 
 // An array of places.
-class ObjArray<T> where T : IPlace
+class ObjArray<T> where T : Obj
 {
 
     public T[] Arr { get; set; }
@@ -98,6 +99,7 @@ class Monster : Obj
     public string Name { get; set; }
     public bool Present { get; set; }
     public bool HasBluffed { get; set; }
+    public bool IsDead { get; set; }
 
     // List of potential monster names.
     public static string[] MonsterNames = new string[]
@@ -115,7 +117,7 @@ class Monster : Obj
     public bool Fight()
     {
         Random rnd = new Random();
-        if (rnd.Next(10) > rnd.Next(10))
+        if (rnd.Next(20) > rnd.Next(20))
         {
             this.Present = false;
             return true;
@@ -212,12 +214,59 @@ class Player
 {
     public string Location { get; set; }
     public int Points { get; set; }
-    public int Lives { get; set; }
+    private int _lives = 0;
+    public int Lives
+    {
+        get { return this._lives; }
+        set
+        {
+            if (this.Monsters.List.Count > 0 && this.Lives > value)
+            {
+                Console.WriteLine(this.Monsters.List[0].Name + " has died!");
+                this.Monsters.List.RemoveAt(0);
+            }
+            this._lives = value;
+        }
+    }
+    
+    public MonsterPack Monsters { get; set; }
 
     public Player(string location, int points, int lives)
     {
+        this.Monsters = new MonsterPack();
         this.Location = location;
         this.Points = points;
         this.Lives = lives;
+    }
+}
+
+class MonsterPack
+{
+    public List<Monster> List { get; set; }
+
+    public MonsterPack()
+    {
+        this.List = new List<Monster>();
+    }
+
+    public bool CatchMonster(Monster monster)
+    {
+        bool success = false;
+
+        Random rnd = new Random();
+        if (rnd.Next(50) > rnd.Next(100))
+        {
+            success = true;
+            Console.WriteLine("You caught it! Would you like to rename it?");
+            Console.WriteLine("1) Yes\n2) No");
+            if (Console.ReadLine() == "1")
+            {
+                Console.WriteLine("Enter the name: ");
+                monster.Name = Console.ReadLine();
+            }
+            List.Add(monster);
+        }
+
+        return success;
     }
 }
