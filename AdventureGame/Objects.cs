@@ -257,12 +257,19 @@ class MonsterPack
         if (rnd.Next(50) > rnd.Next(100))
         {
             success = true;
-            Console.WriteLine("You caught it! Would you like to rename it?");
-            Console.WriteLine("1) Yes\n2) No");
-            if (Console.ReadLine() == "1")
+            bool end = false;
+            while (!end)
             {
-                Console.WriteLine("Enter the name: ");
-                monster.Name = Console.ReadLine();
+                Console.WriteLine("You caught it! Would you like to rename it?");
+                Console.WriteLine("1) Yes\n2) No");
+                string choice = Console.ReadLine();
+                if (choice == "1")
+                {
+                    Console.WriteLine("Enter the name: ");
+                    monster.Name = Console.ReadLine();
+                    end = true;
+                }
+                else if (choice == "2") end = true;
             }
             List.Add(monster);
         }
